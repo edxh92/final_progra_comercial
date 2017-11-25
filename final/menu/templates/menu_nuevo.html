@@ -1,0 +1,6 @@
+  <h1>Menu Nuevo</h1>
+        <!-- {% csrf_token %}  necesitamos estar logeados para tener acceso al siguiente formulario -->
+  <form method="POST" class="post-form">{% csrf_token %}
+      {{ formulario.as_p }}
+        <button type="submit" class="save btn btn-primary ">Guardar</button>
+  </form>
